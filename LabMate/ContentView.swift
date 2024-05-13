@@ -9,21 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isAuthenticated = false
-
+    
     var body: some View {
-        NavigationStack {
-            Group {
-                if isAuthenticated {
-                    JoinClassroomView()
-                } else {
-                    LoginView()
-                }
+        Group {
+            if isAuthenticated {
+                JoinClassroomView()
+            } else {
+                LoginView()
             }
-            .task {
-                for await (event, session) in supabase.auth.authStateChanges {
-                    if [.initialSession, .signedIn, .signedOut].contains(event) {
-                        isAuthenticated = session != nil
-                    }
+        }
+        .task {
+            for await (event, session) in supabase.auth.authStateChanges {
+                if [.initialSession, .signedIn, .signedOut].contains(event) {
+                    isAuthenticated = session != nil
                 }
             }
         }

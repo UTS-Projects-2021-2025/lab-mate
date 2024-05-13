@@ -20,6 +20,7 @@ struct HomeView: View {
                         .frame(maxWidth: .infinity)
                         .padding()
                 }
+                
                 Spacer()
 
                 Section {

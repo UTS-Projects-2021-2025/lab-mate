@@ -30,6 +30,9 @@
 		795E111F2BF0D997005D3D24 /* JoinClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */; };
 		795E11212BF0DA2B005D3D24 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11202BF0DA2B005D3D24 /* CodeTextField.swift */; };
 		795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */; };
+		795E11252BF1DE73005D3D24 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11242BF1DE73005D3D24 /* Classroom.swift */; };
+		795E11272BF1EA2A005D3D24 /* ClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11262BF1EA2A005D3D24 /* ClassroomView.swift */; };
+		795E11292BF1EA60005D3D24 /* ClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinClassroomView.swift; sourceTree = "<group>"; };
 		795E11202BF0DA2B005D3D24 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
 		795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinClassroomViewModel.swift; sourceTree = "<group>"; };
+		795E11242BF1DE73005D3D24 /* Classroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom.swift; sourceTree = "<group>"; };
+		795E11262BF1EA2A005D3D24 /* ClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomView.swift; sourceTree = "<group>"; };
+		795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,8 @@
 				795E11042BF04DE5005D3D24 /* TeacherProfileView.swift */,
 				795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */,
 				795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */,
+				795E11262BF1EA2A005D3D24 /* ClassroomView.swift */,
+				795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				795E110E2BF04FF6005D3D24 /* SupabaseClient.swift */,
+				795E11242BF1DE73005D3D24 /* Classroom.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -338,12 +347,15 @@
 			files = (
 				795E111F2BF0D997005D3D24 /* JoinClassroomView.swift in Sources */,
 				795E11212BF0DA2B005D3D24 /* CodeTextField.swift in Sources */,
+				795E11272BF1EA2A005D3D24 /* ClassroomView.swift in Sources */,
 				795E11062BF04DE5005D3D24 /* HomeView.swift in Sources */,
 				795E110A2BF04DE5005D3D24 /* StudentProfileView.swift in Sources */,
 				795E10D82BE0913C005D3D24 /* ContentView.swift in Sources */,
 				795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */,
 				795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */,
 				795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */,
+				795E11292BF1EA60005D3D24 /* ClassroomViewModel.swift in Sources */,
+				795E11252BF1DE73005D3D24 /* Classroom.swift in Sources */,
 				795E11082BF04DE5005D3D24 /* LoginView.swift in Sources */,
 				795E110F2BF04FF6005D3D24 /* SupabaseClient.swift in Sources */,
 				795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */,
