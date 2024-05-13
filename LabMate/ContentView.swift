@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var isAuthenticated = false
+    @State var isAuthenticated = false
 
-  var body: some View {
-    Group {
-      if isAuthenticated {
-        HomeView()
-      } else {
-        LoginView()
-      }
-    }
-    .task {
-      for await state in await supabase.auth.authStateChanges {
-        if [.initialSession, .signedIn, .signedOut].contains(state.event) {
-          isAuthenticated = state.session != nil
+    var body: some View {
+        NavigationStack {
+            Group {
+                if isAuthenticated {
+                    JoinClassroomView()
+                } else {
+                    LoginView()
+                }
+            }
+            .task {
+                for await (event, session) in supabase.auth.authStateChanges {
+                    if [.initialSession, .signedIn, .signedOut].contains(event) {
+                        isAuthenticated = session != nil
+                    }
+                }
+            }
         }
-      }
-    }
     }
 }
 

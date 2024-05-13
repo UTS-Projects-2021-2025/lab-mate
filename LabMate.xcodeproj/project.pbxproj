@@ -14,6 +14,22 @@
 		795E10E72BE0913E005D3D24 /* LabMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10E62BE0913E005D3D24 /* LabMateTests.swift */; };
 		795E10F12BE0913E005D3D24 /* LabMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10F02BE0913E005D3D24 /* LabMateUITests.swift */; };
 		795E10F32BE0913E005D3D24 /* LabMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10F22BE0913E005D3D24 /* LabMateUITestsLaunchTests.swift */; };
+		795E11062BF04DE5005D3D24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10FF2BF04DE5005D3D24 /* HomeView.swift */; };
+		795E11072BF04DE5005D3D24 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11002BF04DE5005D3D24 /* HomeViewModel.swift */; };
+		795E11082BF04DE5005D3D24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11012BF04DE5005D3D24 /* LoginView.swift */; };
+		795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11022BF04DE5005D3D24 /* LoginViewModel.swift */; };
+		795E110A2BF04DE5005D3D24 /* StudentProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11032BF04DE5005D3D24 /* StudentProfileView.swift */; };
+		795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11042BF04DE5005D3D24 /* TeacherProfileView.swift */; };
+		795E110F2BF04FF6005D3D24 /* SupabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E110E2BF04FF6005D3D24 /* SupabaseClient.swift */; };
+		795E11122BF05379005D3D24 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 795E11112BF05379005D3D24 /* Auth */; };
+		795E11142BF05379005D3D24 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 795E11132BF05379005D3D24 /* Functions */; };
+		795E11162BF05379005D3D24 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 795E11152BF05379005D3D24 /* PostgREST */; };
+		795E11182BF05379005D3D24 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 795E11172BF05379005D3D24 /* Realtime */; };
+		795E111A2BF05379005D3D24 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 795E11192BF05379005D3D24 /* Storage */; };
+		795E111C2BF05379005D3D24 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 795E111B2BF05379005D3D24 /* Supabase */; };
+		795E111F2BF0D997005D3D24 /* JoinClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */; };
+		795E11212BF0DA2B005D3D24 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11202BF0DA2B005D3D24 /* CodeTextField.swift */; };
+		795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,17 @@
 		795E10EC2BE0913E005D3D24 /* LabMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795E10F02BE0913E005D3D24 /* LabMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabMateUITests.swift; sourceTree = "<group>"; };
 		795E10F22BE0913E005D3D24 /* LabMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		795E10FF2BF04DE5005D3D24 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		795E11002BF04DE5005D3D24 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		795E11012BF04DE5005D3D24 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		795E11022BF04DE5005D3D24 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		795E11032BF04DE5005D3D24 /* StudentProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileView.swift; sourceTree = "<group>"; };
+		795E11042BF04DE5005D3D24 /* TeacherProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherProfileView.swift; sourceTree = "<group>"; };
+		795E110E2BF04FF6005D3D24 /* SupabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClient.swift; sourceTree = "<group>"; };
+		795E111D2BF09F49005D3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinClassroomView.swift; sourceTree = "<group>"; };
+		795E11202BF0DA2B005D3D24 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
+		795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinClassroomViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +78,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795E11162BF05379005D3D24 /* PostgREST in Frameworks */,
+				795E11142BF05379005D3D24 /* Functions in Frameworks */,
+				795E111C2BF05379005D3D24 /* Supabase in Frameworks */,
+				795E11122BF05379005D3D24 /* Auth in Frameworks */,
+				795E111A2BF05379005D3D24 /* Storage in Frameworks */,
+				795E11182BF05379005D3D24 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +127,10 @@
 		795E10D42BE0913C005D3D24 /* LabMate */ = {
 			isa = PBXGroup;
 			children = (
+				795E111D2BF09F49005D3D24 /* Info.plist */,
+				795E11102BF0501A005D3D24 /* Components */,
+				795E110C2BF04E07005D3D24 /* Data */,
+				795E11052BF04DE5005D3D24 /* Views */,
 				795E10D52BE0913C005D3D24 /* LabMateApp.swift */,
 				795E10D72BE0913C005D3D24 /* ContentView.swift */,
 				795E10D92BE0913E005D3D24 /* Assets.xcassets */,
@@ -127,6 +164,37 @@
 			path = LabMateUITests;
 			sourceTree = "<group>";
 		};
+		795E11052BF04DE5005D3D24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				795E10FF2BF04DE5005D3D24 /* HomeView.swift */,
+				795E11002BF04DE5005D3D24 /* HomeViewModel.swift */,
+				795E11012BF04DE5005D3D24 /* LoginView.swift */,
+				795E11022BF04DE5005D3D24 /* LoginViewModel.swift */,
+				795E11032BF04DE5005D3D24 /* StudentProfileView.swift */,
+				795E11042BF04DE5005D3D24 /* TeacherProfileView.swift */,
+				795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */,
+				795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		795E110C2BF04E07005D3D24 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				795E110E2BF04FF6005D3D24 /* SupabaseClient.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		795E11102BF0501A005D3D24 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				795E11202BF0DA2B005D3D24 /* CodeTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +211,14 @@
 			dependencies = (
 			);
 			name = LabMate;
+			packageProductDependencies = (
+				795E11112BF05379005D3D24 /* Auth */,
+				795E11132BF05379005D3D24 /* Functions */,
+				795E11152BF05379005D3D24 /* PostgREST */,
+				795E11172BF05379005D3D24 /* Realtime */,
+				795E11192BF05379005D3D24 /* Storage */,
+				795E111B2BF05379005D3D24 /* Supabase */,
+			);
 			productName = LabMate;
 			productReference = 795E10D22BE0913C005D3D24 /* LabMate.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +291,9 @@
 				Base,
 			);
 			mainGroup = 795E10C92BE0913C005D3D24;
+			packageReferences = (
+				795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 795E10D32BE0913C005D3D24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795E111F2BF0D997005D3D24 /* JoinClassroomView.swift in Sources */,
+				795E11212BF0DA2B005D3D24 /* CodeTextField.swift in Sources */,
+				795E11062BF04DE5005D3D24 /* HomeView.swift in Sources */,
+				795E110A2BF04DE5005D3D24 /* StudentProfileView.swift in Sources */,
 				795E10D82BE0913C005D3D24 /* ContentView.swift in Sources */,
+				795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */,
+				795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */,
 				795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */,
+				795E11082BF04DE5005D3D24 /* LoginView.swift in Sources */,
+				795E110F2BF04FF6005D3D24 /* SupabaseClient.swift in Sources */,
+				795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */,
+				795E11072BF04DE5005D3D24 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +514,9 @@
 				DEVELOPMENT_TEAM = M2FST4UL8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LabMate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lab Mate";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +546,9 @@
 				DEVELOPMENT_TEAM = M2FST4UL8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LabMate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lab Mate";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +683,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		795E11112BF05379005D3D24 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		795E11132BF05379005D3D24 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		795E11152BF05379005D3D24 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		795E11172BF05379005D3D24 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		795E11192BF05379005D3D24 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		795E111B2BF05379005D3D24 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795E110D2BF04FA0005D3D24 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 795E10CA2BE0913C005D3D24 /* Project object */;
 }

@@ -12,7 +12,7 @@ struct HomeView: View {
     VStack  {
       HStack {
         Text("LabMate")
-          .foregroundColor(.black)
+          //.foregroundColor(.black)
           .font(.largeTitle)
           .fontWeight(.bold)
           .frame(maxWidth: .infinity)
