@@ -22,78 +22,76 @@ struct StudentProfileView: View {
         Lab(labname: "2", labstart: "17:30", labend: "18:00", lablocation: "Africa")
     ]
     var body: some View {
-        VStack {
-            HStack {
-                Text("Student\n  Profile")
-                    .foregroundColor(.black)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-            }
-        }
-        Text("Personal Statistics:")
-            .foregroundColor(.black)
-            .font(.title)
-            .fontWeight(.bold)
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
-        VStack (spacing: -10) {
-            Text("Responses Submitted:")
-                .foregroundColor(.black)
-                .font(.title)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-            Text("Correct Responses:")
-                .foregroundColor(.black)
-                .font(.title)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-            Text("Average Time: Hours:")
-                .foregroundColor(.black)
-                .font(.title)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-            Text("                               Minutes:")
-                .foregroundColor(.black)
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        VStack (spacing: -10) {
-            Text("History:")
-                .foregroundColor(.black)
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-        }
-        Grid {
-            GridRow {
-                Text("Lab Name")
-                Text("Start")
-                Text("End")
-                Text("Location")
-            }
-            .bold()
-            Divider()
-            ForEach(labs) { lab in
-                GridRow {
-                    Text(lab.labname)
-                    Text(lab.labstart)
-                    Text(lab.labend)
-                    Text(lab.lablocation)
+        NavigationStack{
+            VStack {
+                HStack {
+                    Text("Student\n  Profile")
+                        .foregroundColor(.black)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
                 }
             }
-        }
-        NavigationView{
+            Text("Personal Statistics:")
+                .foregroundColor(.black)
+                .font(.title)
+                .fontWeight(.bold)
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+            VStack (spacing: -10) {
+                Text("Responses Submitted:")
+                    .foregroundColor(.black)
+                    .font(.title)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Correct Responses:")
+                    .foregroundColor(.black)
+                    .font(.title)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Average Time: Hours:")
+                    .foregroundColor(.black)
+                    .font(.title)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("                               Minutes:")
+                    .foregroundColor(.black)
+                    .font(.title)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            VStack (spacing: -10) {
+                Text("History:")
+                    .foregroundColor(.black)
+                    .font(.title)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+            }
+            Grid {
+                GridRow {
+                    Text("Lab Name")
+                    Text("Start")
+                    Text("End")
+                    Text("Location")
+                }
+                .bold()
+                Divider()
+                ForEach(labs) { lab in
+                    GridRow {
+                        Text(lab.labname)
+                        Text(lab.labstart)
+                        Text(lab.labend)
+                        Text(lab.lablocation)
+                    }
+                }
+            }
             TextEditor(text: $text)
                 .toolbar {
                     ToolbarItemGroup(placement:
-                            .bottomBar) {
-                                Button {
-                                } label: {
-                                    Image(systemName: "house")
-                                        .font(.largeTitle)
-    
+                        .bottomBar) {
+                            NavigationLink(destination: HomeView()) {
+                                Image(systemName: "house")
+                                    .font(.largeTitle)
                                 }
                                 .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
                                 Button {
@@ -110,7 +108,7 @@ struct StudentProfileView: View {
                                 }
                                 .disabled(true)
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 30))
-                            }
+                        }
                 }
         }
     }
