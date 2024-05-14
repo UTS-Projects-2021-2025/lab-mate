@@ -12,38 +12,40 @@ struct JoinClassroomView: View {
     @FocusState private var codeIsFocused: Bool
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                AppHeading("Join Classroom")
-                
-                Spacer()
-                
-                VStack(alignment: .leading) {
-                    Section("Enter Classroom Code") {
-                        Text(vm.errMsg)
-                            .foregroundStyle(.red)
-                        TextField("000000", text: $vm.code)
-                            .textFieldStyle(.roundedBorder)
-                            .keyboardType(.numberPad)
-                            .focused($codeIsFocused)
-                        Button("Enter Class", action: vm.toClass).onTapGesture {
-                            codeIsFocused = false
-                        }
-                        //NavigationLink("Enter Class", value: vm.code)
-                    }.navigationDestination(isPresented: $vm.hasClassroom) {
-                        if let clsrm = vm.classroom {
-                            return ClassroomView(classroom: clsrm)
-                        }
-                        
-                        return ClassroomView(classroom: Classroom(id: UUID(), code: vm.code, name: "Fake Class", updatedAt: Date()))
+        VStack {
+            AppHeading("Join Classroom")
+            
+            Spacer()
+            
+            VStack(alignment: .leading) {
+                Section("Enter Classroom Code") {
+                    TextField("000000", text: $vm.code)
+                        .textFieldStyle(.roundedBorder)
+                        .keyboardType(.numberPad)
+                        .focused($codeIsFocused)
+                    Text(vm.errMsg)
+                        .foregroundStyle(.red)
+                    Button("Enter Class", action: vm.toClass)
+                    
+                    //NavigationLink("Enter Class", value: vm.code)
+                }.navigationDestination(isPresented: $vm.hasClassroom) {
+                    if let clsrm = vm.classroom {
+                        return ClassroomView(classroom: clsrm)
                     }
+                    
+                    return ClassroomView(classroom: Classroom(id: UUID(), code: vm.code, name: "Fake Class", updatedAt: Date()))
                 }
-                .padding()
-                
-                Spacer()
             }
             .padding()
+           
+            if codeIsFocused {
+                // to delete: defocus keypad when not used
+                Button("Hide Keypad") { codeIsFocused = false }
+            }
+            
+            Spacer()
         }
+        .padding()
     }
 }
 

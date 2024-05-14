@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         TabView {
-            JoinClassroomView()
+            StudentContentView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
@@ -27,6 +27,7 @@ struct HomeView: View {
         }
     }
 }
+
 #Preview {
     HomeView()
 }

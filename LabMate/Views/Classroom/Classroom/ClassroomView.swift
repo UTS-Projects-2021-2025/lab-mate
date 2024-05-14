@@ -17,14 +17,21 @@ struct ClassroomView: View {
     var body: some View {
         VStack {
             AppHeading("Class")
-            Text("Class '\(vm.classroom.name)' with code \(vm.classroom.code)")
-            
             Spacer()
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+           
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Joined class '\(vm.classroom.name)' with code \(vm.classroom.code)")
+                    .font(.headline)
+                Text("Waiting for activities to start.")
+            }
+            .onAppear(perform: vm.setup)
+            .onDisappear(perform: vm.destroy)
+
+            Spacer()
         }
     }
 }
 
 #Preview {
-    ClassroomView(classroom: Classroom(id: UUID(), code: "666666", name: "Real class", updatedAt: Date()))
+    ClassroomView(classroom: Classroom(id: UUID(), code: "666666", name: "Real Lab", updatedAt: Date()))
 }

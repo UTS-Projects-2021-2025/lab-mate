@@ -38,6 +38,10 @@
 		795E11302BF26955005D3D24 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E112F2BF26955005D3D24 /* DummyView.swift */; };
 		795E11342BF2D93B005D3D24 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11332BF2D93B005D3D24 /* AppError.swift */; };
 		795E11362BF2E58F005D3D24 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11352BF2E58F005D3D24 /* ProfileViewModel.swift */; };
+		795E113D2BF2F559005D3D24 /* SubmitActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E113C2BF2F559005D3D24 /* SubmitActivityView.swift */; };
+		795E113F2BF2F582005D3D24 /* SubmitActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E113E2BF2F582005D3D24 /* SubmitActivityViewModel.swift */; };
+		795E11412BF30774005D3D24 /* StudentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11402BF30774005D3D24 /* StudentContentView.swift */; };
+		795E11432BF32114005D3D24 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11422BF32114005D3D24 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,10 @@
 		795E112F2BF26955005D3D24 /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 		795E11332BF2D93B005D3D24 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		795E11352BF2E58F005D3D24 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		795E113C2BF2F559005D3D24 /* SubmitActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitActivityView.swift; sourceTree = "<group>"; };
+		795E113E2BF2F582005D3D24 /* SubmitActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitActivityViewModel.swift; sourceTree = "<group>"; };
+		795E11402BF30774005D3D24 /* StudentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentContentView.swift; sourceTree = "<group>"; };
+		795E11422BF32114005D3D24 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +208,7 @@
 				795E110E2BF04FF6005D3D24 /* SupabaseClient.swift */,
 				795E11242BF1DE73005D3D24 /* Classroom.swift */,
 				795E11332BF2D93B005D3D24 /* AppError.swift */,
+				795E11422BF32114005D3D24 /* Profile.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -260,8 +269,10 @@
 		795E11392BF2EEFC005D3D24 /* Classroom */ = {
 			isa = PBXGroup;
 			children = (
+				795E113B2BF2F537005D3D24 /* SubmitActivity */,
 				795E113A2BF2EF37005D3D24 /* Classroom */,
 				795E11322BF269F5005D3D24 /* JoinClassroom */,
+				795E11402BF30774005D3D24 /* StudentContentView.swift */,
 			);
 			path = Classroom;
 			sourceTree = "<group>";
@@ -273,6 +284,15 @@
 				795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */,
 			);
 			path = Classroom;
+			sourceTree = "<group>";
+		};
+		795E113B2BF2F537005D3D24 /* SubmitActivity */ = {
+			isa = PBXGroup;
+			children = (
+				795E113C2BF2F559005D3D24 /* SubmitActivityView.swift */,
+				795E113E2BF2F582005D3D24 /* SubmitActivityViewModel.swift */,
+			);
+			path = SubmitActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,10 +437,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				795E111F2BF0D997005D3D24 /* JoinClassroomView.swift in Sources */,
+				795E11432BF32114005D3D24 /* Profile.swift in Sources */,
+				795E113F2BF2F582005D3D24 /* SubmitActivityViewModel.swift in Sources */,
 				795E11212BF0DA2B005D3D24 /* CodeTextField.swift in Sources */,
 				795E11342BF2D93B005D3D24 /* AppError.swift in Sources */,
+				795E11412BF30774005D3D24 /* StudentContentView.swift in Sources */,
 				795E11272BF1EA2A005D3D24 /* ClassroomView.swift in Sources */,
 				795E11062BF04DE5005D3D24 /* HomeView.swift in Sources */,
+				795E113D2BF2F559005D3D24 /* SubmitActivityView.swift in Sources */,
 				795E110A2BF04DE5005D3D24 /* StudentProfileView.swift in Sources */,
 				795E10D82BE0913C005D3D24 /* ContentView.swift in Sources */,
 				795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */,
