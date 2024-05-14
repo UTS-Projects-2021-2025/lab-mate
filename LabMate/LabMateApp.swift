@@ -15,5 +15,3 @@ struct LabMateApp: App {
         }
     }
 }
-
-//test
