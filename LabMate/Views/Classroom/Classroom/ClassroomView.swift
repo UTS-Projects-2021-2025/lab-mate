@@ -16,6 +16,7 @@ struct ClassroomView: View {
     
     var body: some View {
         VStack {
+            AppHeading("Class")
             Text("Class '\(vm.classroom.name)' with code \(vm.classroom.code)")
             
             Spacer()

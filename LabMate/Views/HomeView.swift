@@ -8,42 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
-
     var body: some View {
-        NavigationView {
-            VStack  {
-                HStack {
-                    Text("LabMate")
-                        .foregroundColor(.black)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity)
-                        .padding()
+        TabView {
+            JoinClassroomView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
                 }
-                
-                Spacer()
-
-                Section {
-                    Text("WELCOME")
-                        .foregroundColor(.black)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity)
-                        .padding()
+            
+            DummyView()
+                .tabItem {
+                    Label("Profile Stats", systemImage: "person.3")
                 }
-                Spacer()
-                    .frame(height: 50)
-                Section {
-                    NavigationLink(destination: LoginView()) {
-                            Text("Login")
-                        }
-                    .font(.title)
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle")
                 }
-                Spacer()
-                
-            }
         }
-        .navigationBarBackButtonHidden(true)
     }
 }
 #Preview {

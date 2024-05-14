@@ -33,6 +33,11 @@
 		795E11252BF1DE73005D3D24 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11242BF1DE73005D3D24 /* Classroom.swift */; };
 		795E11272BF1EA2A005D3D24 /* ClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11262BF1EA2A005D3D24 /* ClassroomView.swift */; };
 		795E11292BF1EA60005D3D24 /* ClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */; };
+		795E112C2BF26488005D3D24 /* AppHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E112B2BF26488005D3D24 /* AppHeading.swift */; };
+		795E112E2BF26703005D3D24 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E112D2BF26703005D3D24 /* ProfileView.swift */; };
+		795E11302BF26955005D3D24 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E112F2BF26955005D3D24 /* DummyView.swift */; };
+		795E11342BF2D93B005D3D24 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11332BF2D93B005D3D24 /* AppError.swift */; };
+		795E11362BF2E58F005D3D24 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11352BF2E58F005D3D24 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,11 @@
 		795E11242BF1DE73005D3D24 /* Classroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom.swift; sourceTree = "<group>"; };
 		795E11262BF1EA2A005D3D24 /* ClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomView.swift; sourceTree = "<group>"; };
 		795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomViewModel.swift; sourceTree = "<group>"; };
+		795E112B2BF26488005D3D24 /* AppHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeading.swift; sourceTree = "<group>"; };
+		795E112D2BF26703005D3D24 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		795E112F2BF26955005D3D24 /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
+		795E11332BF2D93B005D3D24 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		795E11352BF2E58F005D3D24 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,16 +183,13 @@
 		795E11052BF04DE5005D3D24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				795E11392BF2EEFC005D3D24 /* Classroom */,
+				795E11382BF2EEF3005D3D24 /* Stats */,
+				795E11372BF2EEDE005D3D24 /* Profile */,
+				795E11312BF269CF005D3D24 /* Login */,
 				795E10FF2BF04DE5005D3D24 /* HomeView.swift */,
 				795E11002BF04DE5005D3D24 /* HomeViewModel.swift */,
-				795E11012BF04DE5005D3D24 /* LoginView.swift */,
-				795E11022BF04DE5005D3D24 /* LoginViewModel.swift */,
-				795E11032BF04DE5005D3D24 /* StudentProfileView.swift */,
-				795E11042BF04DE5005D3D24 /* TeacherProfileView.swift */,
-				795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */,
-				795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */,
-				795E11262BF1EA2A005D3D24 /* ClassroomView.swift */,
-				795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */,
+				795E112F2BF26955005D3D24 /* DummyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 			children = (
 				795E110E2BF04FF6005D3D24 /* SupabaseClient.swift */,
 				795E11242BF1DE73005D3D24 /* Classroom.swift */,
+				795E11332BF2D93B005D3D24 /* AppError.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -199,9 +207,72 @@
 		795E11102BF0501A005D3D24 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				795E112A2BF26467005D3D24 /* Text */,
 				795E11202BF0DA2B005D3D24 /* CodeTextField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		795E112A2BF26467005D3D24 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				795E112B2BF26488005D3D24 /* AppHeading.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		795E11312BF269CF005D3D24 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				795E11012BF04DE5005D3D24 /* LoginView.swift */,
+				795E11022BF04DE5005D3D24 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		795E11322BF269F5005D3D24 /* JoinClassroom */ = {
+			isa = PBXGroup;
+			children = (
+				795E111E2BF0D997005D3D24 /* JoinClassroomView.swift */,
+				795E11222BF0E32A005D3D24 /* JoinClassroomViewModel.swift */,
+			);
+			path = JoinClassroom;
+			sourceTree = "<group>";
+		};
+		795E11372BF2EEDE005D3D24 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				795E11352BF2E58F005D3D24 /* ProfileViewModel.swift */,
+				795E112D2BF26703005D3D24 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		795E11382BF2EEF3005D3D24 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				795E11032BF04DE5005D3D24 /* StudentProfileView.swift */,
+				795E11042BF04DE5005D3D24 /* TeacherProfileView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		795E11392BF2EEFC005D3D24 /* Classroom */ = {
+			isa = PBXGroup;
+			children = (
+				795E113A2BF2EF37005D3D24 /* Classroom */,
+				795E11322BF269F5005D3D24 /* JoinClassroom */,
+			);
+			path = Classroom;
+			sourceTree = "<group>";
+		};
+		795E113A2BF2EF37005D3D24 /* Classroom */ = {
+			isa = PBXGroup;
+			children = (
+				795E11262BF1EA2A005D3D24 /* ClassroomView.swift */,
+				795E11282BF1EA60005D3D24 /* ClassroomViewModel.swift */,
+			);
+			path = Classroom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +418,7 @@
 			files = (
 				795E111F2BF0D997005D3D24 /* JoinClassroomView.swift in Sources */,
 				795E11212BF0DA2B005D3D24 /* CodeTextField.swift in Sources */,
+				795E11342BF2D93B005D3D24 /* AppError.swift in Sources */,
 				795E11272BF1EA2A005D3D24 /* ClassroomView.swift in Sources */,
 				795E11062BF04DE5005D3D24 /* HomeView.swift in Sources */,
 				795E110A2BF04DE5005D3D24 /* StudentProfileView.swift in Sources */,
@@ -354,9 +426,13 @@
 				795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */,
 				795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */,
 				795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */,
+				795E112E2BF26703005D3D24 /* ProfileView.swift in Sources */,
 				795E11292BF1EA60005D3D24 /* ClassroomViewModel.swift in Sources */,
 				795E11252BF1DE73005D3D24 /* Classroom.swift in Sources */,
 				795E11082BF04DE5005D3D24 /* LoginView.swift in Sources */,
+				795E11362BF2E58F005D3D24 /* ProfileViewModel.swift in Sources */,
+				795E11302BF26955005D3D24 /* DummyView.swift in Sources */,
+				795E112C2BF26488005D3D24 /* AppHeading.swift in Sources */,
 				795E110F2BF04FF6005D3D24 /* SupabaseClient.swift in Sources */,
 				795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */,
 				795E11072BF04DE5005D3D24 /* HomeViewModel.swift in Sources */,
