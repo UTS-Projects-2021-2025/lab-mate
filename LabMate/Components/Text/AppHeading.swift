@@ -20,7 +20,7 @@ struct AppHeading: View {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
-                .padding()
+                .padding(EdgeInsets(top: 20, leading: 10, bottom: 10, trailing: 10))
                 //.foregroundColor(.black)
         }
     }
