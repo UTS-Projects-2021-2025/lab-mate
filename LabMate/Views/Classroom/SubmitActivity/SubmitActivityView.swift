@@ -11,12 +11,11 @@ struct SubmitActivityView: View {
     @State private var submissionSelection = "File Upload" // Default selection
     @State private var typedResponse: String = ""
     
+    @Bindable private var vm = SubmitActivityViewModel()
+    
     var body: some View {
         VStack {
-            Text("Submit Activity")
-                .font(.title)
-                .padding(.top, 20)
-                .padding(.bottom, 10)
+            AppHeading("Submit Activity")
             
             Text("Please submit completed activity using the options below.")
                 .font(.body)
@@ -26,61 +25,24 @@ struct SubmitActivityView: View {
                 .font(.footnote)
                 .padding(.bottom, 10)
             
-            Picker(selection: $submissionSelection, label: Text("")) {
-                Text("File Upload").tag("File Upload")
-                Text("Typed Response").tag("Typed Response")
+            Picker(selection: $vm.submissionSelection, label: EmptyView()) {
+                Text("File Upload").tag(SubmissionSelections.fileInputSelection)
+                Text("Typed Response").tag(SubmissionSelections.typedSelection)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.horizontal, 10)
             
-            if submissionSelection == "Typed Response" {
+            if vm.submissionSelection == .typedSelection {
                 TypedResponseView(text: $typedResponse)
                     .padding(.horizontal)
             } else {
-                Spacer()
-                Button(action: {
-                    // Upload a File button functionality here
-                }) {
-                    Text("Upload a File")
-                        .font(.body)
-                        .foregroundColor(.blue)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 2))
-                }
-                .padding(.horizontal)
-                Spacer()
+                FileResponseView(action: vm.submitFile)
             }
             
             Spacer()
         }
     }
 }
-
-struct TypedResponseView: View {
-    @Binding var text: String
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text("Please type your response below:")
-                .font(.body)
-                .foregroundColor(.secondary)
-                .padding(.bottom, 4)
-            
-            //Click, hold and drag to scroll
-            ScrollView(.vertical) {
-                TextEditor(text: $text)
-                    .font(.body)
-                    .lineSpacing(5)
-                    .frame(minHeight: 100)
-            }
-            .overlay(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color.secondary, lineWidth: 1)
-            )
-        }
-    }
-}
-
 
 #Preview {
     SubmitActivityView()
