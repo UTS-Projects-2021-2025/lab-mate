@@ -15,7 +15,6 @@
 		795E10F12BE0913E005D3D24 /* LabMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10F02BE0913E005D3D24 /* LabMateUITests.swift */; };
 		795E10F32BE0913E005D3D24 /* LabMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10F22BE0913E005D3D24 /* LabMateUITestsLaunchTests.swift */; };
 		795E11062BF04DE5005D3D24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10FF2BF04DE5005D3D24 /* HomeView.swift */; };
-		795E11072BF04DE5005D3D24 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11002BF04DE5005D3D24 /* HomeViewModel.swift */; };
 		795E11082BF04DE5005D3D24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11012BF04DE5005D3D24 /* LoginView.swift */; };
 		795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11022BF04DE5005D3D24 /* LoginViewModel.swift */; };
 		795E110A2BF04DE5005D3D24 /* StudentProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11032BF04DE5005D3D24 /* StudentProfileView.swift */; };
@@ -73,7 +72,6 @@
 		795E10F02BE0913E005D3D24 /* LabMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabMateUITests.swift; sourceTree = "<group>"; };
 		795E10F22BE0913E005D3D24 /* LabMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		795E10FF2BF04DE5005D3D24 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		795E11002BF04DE5005D3D24 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		795E11012BF04DE5005D3D24 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		795E11022BF04DE5005D3D24 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		795E11032BF04DE5005D3D24 /* StudentProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileView.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				795E11372BF2EEDE005D3D24 /* Profile */,
 				795E11312BF269CF005D3D24 /* Login */,
 				795E10FF2BF04DE5005D3D24 /* HomeView.swift */,
-				795E11002BF04DE5005D3D24 /* HomeViewModel.swift */,
 				795E112F2BF26955005D3D24 /* DummyView.swift */,
 			);
 			path = Views;
@@ -459,7 +456,6 @@
 				795E112C2BF26488005D3D24 /* AppHeading.swift in Sources */,
 				795E110F2BF04FF6005D3D24 /* SupabaseClient.swift in Sources */,
 				795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */,
-				795E11072BF04DE5005D3D24 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
