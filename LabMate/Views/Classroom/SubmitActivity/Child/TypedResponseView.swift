@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TypedResponseView: View {
+    let action: () -> Void
     @Binding var text: String
     
     var body: some View {
@@ -29,10 +30,20 @@ struct TypedResponseView: View {
                     .stroke(Color.secondary, lineWidth: 1)
             )
         }
+        Spacer()
+        Button(action: action) {
+            Text("Submit")
+                .font(.body)
+                .foregroundColor(.blue)
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 2))
+            
+        }
+        .padding(.horizontal)
     }
 }
 
 #Preview {
     @State var text = ""
-    return TypedResponseView(text: $text)
+    return TypedResponseView(action: { }, text: $text)
 }
