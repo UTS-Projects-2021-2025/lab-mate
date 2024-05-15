@@ -14,19 +14,32 @@ struct LoginView: View {
     
     var body: some View {
         VStack  {
+            HStack {
+                    Text("LabMate")
+                      .foregroundColor(.black)
+                      .font(.largeTitle)
+                      .fontWeight(.bold)
+                      .frame(maxWidth: .infinity)
+                      .padding()
+            }
             AppHeading("Login")
             Spacer()
-                .frame(height: 80)
+                .frame(height: 100)
             Section {
                 VStack(alignment: .leading) {
                     Text("Enter Email:")
-                    
+                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 15, trailing: 20))
                     TextField("Email address...", text: $vm.email)
                         .autocorrectionDisabled()
                         .textContentType(.emailAddress)
                         .textInputAutocapitalization(.never)
-                        .textFieldStyle(.roundedBorder)
-                    
+                        .font(.headline)
+                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                        .background(
+                          Color.gray
+                            .brightness(0.4)
+                        )
+                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 15, trailing: 20))
                 }.padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
             }
             
@@ -43,7 +56,7 @@ struct LoginView: View {
                 }
             }
             
-            //Spacer().frame(height: 130)
+            Spacer().frame(height: 100)
             
             Section {
                 Button("Login") {
