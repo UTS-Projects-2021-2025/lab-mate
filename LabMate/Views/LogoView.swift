@@ -11,9 +11,9 @@ struct LogoView: View {
     var body: some View {
         HStack {
             Text("LabMate")
-                .foregroundColor(.black)
                 .font(.system(size: 40))
-                .fontWeight(.bold)
+                .monospaced()
+                .fontWeight(.semibold)
                 .padding(.top, 20)
             Image(.labMateLogo)
                 .resizable()
