@@ -44,7 +44,6 @@
 		795E11432BF32114005D3D24 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11422BF32114005D3D24 /* Profile.swift */; };
 		795E11462BF48164005D3D24 /* TypedResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11452BF48164005D3D24 /* TypedResponseView.swift */; };
 		795E11482BF48177005D3D24 /* FileResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11472BF48177005D3D24 /* FileResponseView.swift */; };
-		876B00D12BF619680081C49A /* LabMateLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 876B00D02BF619680081C49A /* LabMateLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +99,6 @@
 		795E11422BF32114005D3D24 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		795E11452BF48164005D3D24 /* TypedResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedResponseView.swift; sourceTree = "<group>"; };
 		795E11472BF48177005D3D24 /* FileResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResponseView.swift; sourceTree = "<group>"; };
-		876B00D02BF619680081C49A /* LabMateLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LabMateLogo.png; path = ../../../../../../Desktop/LabMateLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +219,6 @@
 		795E11102BF0501A005D3D24 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				876B00CF2BF6193C0081C49A /* Logo */,
 				795E112A2BF26467005D3D24 /* Text */,
 				795E11202BF0DA2B005D3D24 /* CodeTextField.swift */,
 			);
@@ -310,14 +307,6 @@
 				795E11472BF48177005D3D24 /* FileResponseView.swift */,
 			);
 			path = Child;
-			sourceTree = "<group>";
-		};
-		876B00CF2BF6193C0081C49A /* Logo */ = {
-			isa = PBXGroup;
-			children = (
-				876B00D02BF619680081C49A /* LabMateLogo.png */,
-			);
-			path = Logo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				795E10DD2BE0913E005D3D24 /* Preview Assets.xcassets in Resources */,
-				876B00D12BF619680081C49A /* LabMateLogo.png in Resources */,
 				795E10DA2BE0913E005D3D24 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

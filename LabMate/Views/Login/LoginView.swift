@@ -15,12 +15,18 @@ struct LoginView: View {
     var body: some View {
         VStack  {
             HStack {
+
                 Text("LabMate")
                     .foregroundColor(.black)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .frame(maxWidth: .infinity)
-                    .padding()
+                    .padding(.top, 20)
+                Image(.labMateLogo)
+                    .resizable()
+                    .frame(maxWidth: 55, maxHeight: 55)
+                    .padding(.top, 10)
+                    .padding(.bottom, -10)
+                
             }
             AppHeading("Login")
             Spacer()
