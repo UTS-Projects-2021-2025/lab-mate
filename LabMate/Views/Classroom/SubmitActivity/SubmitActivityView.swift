@@ -21,21 +21,26 @@ struct SubmitActivityView: View {
                 .font(.body)
                 .padding(.bottom, 10)
             
-            Text("Submission types accepted: file upload or typed response.")
+            Text("Submission types accepted: file upload, typed response or use camera.")
                 .font(.footnote)
                 .padding(.bottom, 10)
             
             Picker(selection: $vm.submissionSelection, label: EmptyView()) {
                 Text("File Upload").tag(SubmissionSelections.fileInputSelection)
                 Text("Typed Response").tag(SubmissionSelections.typedSelection)
+                Text("Use Camera").tag(SubmissionSelections.cameraSelection)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.horizontal, 10)
             
             if vm.submissionSelection == .typedSelection {
-                TypedResponseView(text: $typedResponse)
+                TypedResponseView(action: vm.submitFile, text: $typedResponse)
                     .padding(.horizontal)
-            } else {
+            }
+            else if vm.submissionSelection == .cameraSelection {
+                CameraView(action: vm.submitFile)
+            }
+            else {
                 FileResponseView(action: vm.submitFile)
             }
             

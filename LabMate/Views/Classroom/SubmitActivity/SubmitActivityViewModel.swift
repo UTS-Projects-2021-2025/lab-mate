@@ -8,7 +8,7 @@
 import Foundation
 
 enum SubmissionSelections: String, CaseIterable, Identifiable {
-    case typedSelection, fileInputSelection
+    case typedSelection, fileInputSelection, cameraSelection
     var id: Self { self }
 }
 

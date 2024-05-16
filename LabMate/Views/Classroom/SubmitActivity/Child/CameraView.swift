@@ -1,20 +1,20 @@
 //
-//  FileResponseView.swift
+//  CameraView.swift
 //  LabMate
 //
-//  Created by Euan Mendoza on 15/5/2024.
+//  Created by Noah Koshy on 15/5/2024.
 //
 
 import SwiftUI
 
-struct FileResponseView: View {
+struct CameraView: View {
     let action: () -> Void
     
     var body: some View {
         VStack {
             Spacer()
             Button(action: action) {
-                Text("Upload a File")
+                Text("Upload a Photo")
                     .font(.body)
                     .foregroundColor(.blue)
                     .padding()
@@ -35,5 +35,5 @@ struct FileResponseView: View {
 }
 
 #Preview {
-    FileResponseView(action: { })
+    CameraView(action: { })
 }

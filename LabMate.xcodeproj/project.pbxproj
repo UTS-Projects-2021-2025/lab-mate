@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57E1DEA22BF4EB4700393B21 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1DEA12BF4EB4700393B21 /* CameraView.swift */; };
 		795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10D52BE0913C005D3D24 /* LabMateApp.swift */; };
 		795E10D82BE0913C005D3D24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E10D72BE0913C005D3D24 /* ContentView.swift */; };
 		795E10DA2BE0913E005D3D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795E10D92BE0913E005D3D24 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57E1DEA12BF4EB4700393B21 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		795E10D22BE0913C005D3D24 /* LabMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795E10D52BE0913C005D3D24 /* LabMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabMateApp.swift; sourceTree = "<group>"; };
 		795E10D72BE0913C005D3D24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				795E11452BF48164005D3D24 /* TypedResponseView.swift */,
+				57E1DEA12BF4EB4700393B21 /* CameraView.swift */,
 				795E11472BF48177005D3D24 /* FileResponseView.swift */,
 			);
 			path = Child;
@@ -462,6 +465,7 @@
 				795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */,
 				795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */,
 				795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */,
+				57E1DEA22BF4EB4700393B21 /* CameraView.swift in Sources */,
 				795E112E2BF26703005D3D24 /* ProfileView.swift in Sources */,
 				795E11482BF48177005D3D24 /* FileResponseView.swift in Sources */,
 				795E11292BF1EA60005D3D24 /* ClassroomViewModel.swift in Sources */,
