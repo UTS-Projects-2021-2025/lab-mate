@@ -4,7 +4,11 @@
 - Link to the admin page github repo: <https://github.com/UTS-Projects-2021-2025/lab-mate-teachers-web>
 - Link to the admin page: <https://lab-mate-admin.pages.dev>
 
-Lab Mate is a mobile application that is mean't
+Lab Mate is a mobile application that bridges a communication gap for small to
+medium sized classrooms. The idea being that Lab Mate can be a stepping stone to
+getting students to engage and present in class material. It is a life long goal
+of mathematical educaters to get students to be comfortable presenting infront
+of class, lab mate presents a low stakes environment.
 
 ## Motivation for Lab Mate
 
