@@ -27,6 +27,9 @@ class ClassroomViewModel {
         Task {
             await joinClass()
         }
+        Task {
+            await fetchActivities()
+        }
     }
     
     func destroy() {
@@ -37,7 +40,7 @@ class ClassroomViewModel {
     
     func getCurrentActivity() -> Activity? {
         let now = Date()
-        let currentActivities = activities.filter { $0.startTime < now && $0.endTime < now }
+        let currentActivities = activities.filter { $0.startTime < now && $0.endTime > now }
         return currentActivities.first
     }
     
@@ -65,6 +68,8 @@ class ClassroomViewModel {
                 }
             }
             
+            print("Time Now \(Date())")
+            
             print("Activities:")
             print(activities)
         } catch {
@@ -85,8 +90,6 @@ class ClassroomViewModel {
     }
     
     func joinClass() async {
-        await fetchActivities()
-        
         channel = await supabase.channel(classroom.code)
        
         let insertions = await channel?.postgresChange(InsertAction.self, schema: "public", table: "activities")

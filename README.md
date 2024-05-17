@@ -32,8 +32,40 @@ minute mail should work though).*
 Lab Mate is a highly synchronous app, so in order to use the application you
 need to follow each step in specific order.
 
+### Creating a classroom
+
+- Can be done in the admin page, use any arbitrary email for now.
+
+### Joining a classroom
+
+- In the mobile app, sign in by entering email and clicking the email redirect
+  link to application.
+- Also login to admin page to see real time updates.
+- Enter a classroom code found on the admin page in the provided text input
+  panel.
+- You should see the users name appear on the admin panel, or anonymous if the
+  name is not set.
+
+### Starting a classroom activity
+
+- Creating an activity on the admin page should automatically change the users
+  view in real time if they have entered a classroom.
+- There is some time constraints however, such as entering a classroom activity
+  will not work if the activity is not scheduled to be happening at the devices
+  current set time.
+
 ## Libraries and Technology Used
 
-- Supabase: 
+- Supabase: https://supabase.com/
 
+## Contributions
 
+- Noah Koshy
+  - The Design of the App
+  - The Activity Pages
+- Christie Choi
+  - Organisational Leader
+  - The Authentication and Profile Pages
+- Euan Mendoza
+  - Backend
+  - Internal App Logic
