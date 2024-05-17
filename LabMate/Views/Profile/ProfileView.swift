@@ -4,8 +4,8 @@
 //
 //  Created by Euan Mendoza on 14/5/2024.
 //
-import PhotosUI
 import SwiftUI
+import PhotosUI
 
 struct ProfileView: View {
     @State var imageSelection: PhotosPickerItem?
@@ -20,17 +20,18 @@ struct ProfileView: View {
             Form {
                 Section {
                     HStack {
-                        /*Group {
-                         if let avatarImage {
-                         avatarImage.image.resizable()
-                         } else {
-                         Color.clear
-                         }
+                        Group {
+                            if let avatarImage = vm.avatarImage {
+                                avatarImage.image.resizable()
+                            } else {
+                                Color.clear
+                            }
                          }
                          .scaledToFit()
                          .frame(width: 80, height: 80)
                          
-                         Spacer() */
+                        Spacer()
+                        
                         PhotosPicker(selection: $imageSelection, matching: .images) {
                             Image(systemName: "pencil.circle.fill")
                                 .symbolRenderingMode(.multicolor)
@@ -47,13 +48,19 @@ struct ProfileView: View {
                         .textContentType(.name)
                 }
                 
-                Button("Update Profile", action: vm.signOut)
+                if vm.isLoading {
+                    ProgressView()
+                }
+                
+                Button("Update Profile", action: vm.updateProfileButtonTapped)
                 
                 Section{
                     Button("Sign out", role: .destructive, action: vm.signOut)
                 }
-                
             }
+        }
+        .task {
+            await vm.getInitialProfile()
         }
     }
 }

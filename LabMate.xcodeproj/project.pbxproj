@@ -46,6 +46,7 @@
 		795E11482BF48177005D3D24 /* FileResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11472BF48177005D3D24 /* FileResponseView.swift */; };
 		79CEB1EF2BF627A800280A21 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CEB1EE2BF627A800280A21 /* Activity.swift */; };
 		79CEB1F42BF6494A00280A21 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CEB1F32BF6494A00280A21 /* ActivityView.swift */; };
+		79F4740B2BF77E43002A6D2A /* AvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4740A2BF77E43002A6D2A /* AvatarImage.swift */; };
 		876B00D32BF625670081C49A /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B00D22BF625670081C49A /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		795E11472BF48177005D3D24 /* FileResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResponseView.swift; sourceTree = "<group>"; };
 		79CEB1EE2BF627A800280A21 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		79CEB1F32BF6494A00280A21 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		79F4740A2BF77E43002A6D2A /* AvatarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImage.swift; sourceTree = "<group>"; };
 		876B00D22BF625670081C49A /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,6 +231,7 @@
 			children = (
 				795E112A2BF26467005D3D24 /* Text */,
 				795E11202BF0DA2B005D3D24 /* CodeTextField.swift */,
+				79F4740A2BF77E43002A6D2A /* AvatarImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				795E110B2BF04DE5005D3D24 /* TeacherProfileView.swift in Sources */,
 				795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */,
 				795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */,
+				79F4740B2BF77E43002A6D2A /* AvatarImage.swift in Sources */,
 				57E1DEA22BF4EB4700393B21 /* CameraView.swift in Sources */,
 				79CEB1F42BF6494A00280A21 /* ActivityView.swift in Sources */,
 				795E112E2BF26703005D3D24 /* ProfileView.swift in Sources */,

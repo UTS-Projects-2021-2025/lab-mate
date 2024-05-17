@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct LoginView: View {
-    //@State private var text = ""
-    
     @Bindable private var vm = LoginViewModel()
     
     var body: some View {
