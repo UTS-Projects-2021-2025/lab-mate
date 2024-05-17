@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct SubmitActivityView: View {
-    @State private var submissionSelection = "File Upload" // Default selection
-    @State private var typedResponse: String = ""
-    
     @Bindable private var vm = SubmitActivityViewModel()
     
     var body: some View {
@@ -34,7 +31,7 @@ struct SubmitActivityView: View {
             .padding(.horizontal, 10)
             
             if vm.submissionSelection == .typedSelection {
-                TypedResponseView(action: vm.submitFile, text: $typedResponse)
+                TypedResponseView(action: vm.submitFile, text: $vm.typedResponse)
                     .padding(.horizontal)
             }
             else if vm.submissionSelection == .cameraSelection {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StudentProfileView: View {
-    @State private var text = ""
+    //@State private var text = ""
     
     struct Lab: Identifiable {
         let id = UUID()
@@ -19,27 +19,20 @@ struct StudentProfileView: View {
     }
     let labs = [
         Lab(labname: "1", labstart: "16:00", labend: "17:00", lablocation: "Sydney"),
-        Lab(labname: "2", labstart: "17:30", labend: "18:00", lablocation: "Africa")
+        Lab(labname: "2", labstart: "17:30", labend: "18:00", lablocation: "Africa"),
+        Lab(labname: "3", labstart: "18:30", labend: "19:00", lablocation: "Korea")
     ]
     var body: some View {
-        NavigationStack{
-            VStack {
-                HStack {
-                    Text("Student\n  Profile")
-                        .foregroundColor(.black)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                }
-            }
+        VStack {
+            AppHeading("Student Stats")
+            
             Text("Personal Statistics:")
-                .foregroundColor(.black)
                 .font(.title)
-                .fontWeight(.bold)
+                .fontWeight(.semibold)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-            VStack (spacing: -10) {
+            
+            VStack (alignment: .leading) {
                 Text("Responses Submitted:")
                     .foregroundColor(.black)
                     .font(.title)
@@ -59,7 +52,7 @@ struct StudentProfileView: View {
                     .foregroundColor(.black)
                     .font(.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                }
+            }
             VStack (spacing: -10) {
                 Text("History:")
                     .foregroundColor(.black)
@@ -85,32 +78,9 @@ struct StudentProfileView: View {
                     }
                 }
             }
-            TextEditor(text: $text)
-                .toolbar {
-                    ToolbarItemGroup(placement:
-                        .bottomBar) {
-                            NavigationLink(destination: HomeView()) {
-                                Image(systemName: "house")
-                                    .font(.largeTitle)
-                                }
-                                .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
-                                Button {
-                                } label: {
-                                    Image(systemName: "person.3")
-                                        .font(.largeTitle)
-                                    
-                                }
-                                .padding(EdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 25))
-                                Button {
-                                } label: {
-                                    Image(systemName: "person.crop.circle")
-                                        .font(.largeTitle)
-                                }
-                                .disabled(true)
-                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 30))
-                        }
-                }
+            Spacer()
         }
+        //TextEditor(text: $text)
     }
 }
 #Preview {

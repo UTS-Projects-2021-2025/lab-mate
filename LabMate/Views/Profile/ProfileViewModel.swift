@@ -10,6 +10,7 @@ import Foundation
 @Observable
 class ProfileViewModel {
     var username = ""
+    var fullName = ""
     
     init() {}
     

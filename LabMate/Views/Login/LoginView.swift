@@ -17,16 +17,15 @@ struct LoginView: View {
             HStack {
 
                 Text("LabMate")
-                    .foregroundColor(.black)
                     .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
+                    .fontDesign(.monospaced)
                     .padding(.top, 20)
                 Image(.labMateLogo)
                     .resizable()
                     .frame(maxWidth: 55, maxHeight: 55)
                     .padding(.top, 10)
                     .padding(.bottom, -10)
-                
             }
             AppHeading("Login")
             Spacer()
@@ -45,6 +44,7 @@ struct LoginView: View {
                             Color.gray
                                 .brightness(0.4)
                         )
+                        .foregroundColor(.black)
                         .padding(EdgeInsets(top: 0, leading: 20, bottom: 15, trailing: 20))
                 }.padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
             }
