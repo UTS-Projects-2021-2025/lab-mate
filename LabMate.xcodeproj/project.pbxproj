@@ -44,7 +44,14 @@
 		795E11432BF32114005D3D24 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11422BF32114005D3D24 /* Profile.swift */; };
 		795E11462BF48164005D3D24 /* TypedResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11452BF48164005D3D24 /* TypedResponseView.swift */; };
 		795E11482BF48177005D3D24 /* FileResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E11472BF48177005D3D24 /* FileResponseView.swift */; };
+<<<<<<< HEAD
 		876B00D32BF625670081C49A /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B00D22BF625670081C49A /* LogoView.swift */; };
+||||||| e205d7e
+=======
+		79CEB1EF2BF627A800280A21 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CEB1EE2BF627A800280A21 /* Activity.swift */; };
+		79CEB1F42BF6494A00280A21 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CEB1F32BF6494A00280A21 /* ActivityView.swift */; };
+		876B00D32BF625670081C49A /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B00D22BF625670081C49A /* LogoView.swift */; };
+>>>>>>> dev/euan
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +107,14 @@
 		795E11422BF32114005D3D24 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		795E11452BF48164005D3D24 /* TypedResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedResponseView.swift; sourceTree = "<group>"; };
 		795E11472BF48177005D3D24 /* FileResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResponseView.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		876B00D22BF625670081C49A /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+||||||| e205d7e
+=======
+		79CEB1EE2BF627A800280A21 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		79CEB1F32BF6494A00280A21 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		876B00D22BF625670081C49A /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+>>>>>>> dev/euan
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +229,7 @@
 				795E11242BF1DE73005D3D24 /* Classroom.swift */,
 				795E11332BF2D93B005D3D24 /* AppError.swift */,
 				795E11422BF32114005D3D24 /* Profile.swift */,
+				79CEB1EE2BF627A800280A21 /* Activity.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -275,6 +290,7 @@
 		795E11392BF2EEFC005D3D24 /* Classroom */ = {
 			isa = PBXGroup;
 			children = (
+				79CEB1F02BF6492300280A21 /* Activity */,
 				795E113B2BF2F537005D3D24 /* SubmitActivity */,
 				795E113A2BF2EF37005D3D24 /* Classroom */,
 				795E11322BF269F5005D3D24 /* JoinClassroom */,
@@ -310,6 +326,14 @@
 				795E11472BF48177005D3D24 /* FileResponseView.swift */,
 			);
 			path = Child;
+			sourceTree = "<group>";
+		};
+		79CEB1F02BF6492300280A21 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				79CEB1F32BF6494A00280A21 /* ActivityView.swift */,
+			);
+			path = Activity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,6 +494,7 @@
 				795E11092BF04DE5005D3D24 /* LoginViewModel.swift in Sources */,
 				795E10D62BE0913C005D3D24 /* LabMateApp.swift in Sources */,
 				57E1DEA22BF4EB4700393B21 /* CameraView.swift in Sources */,
+				79CEB1F42BF6494A00280A21 /* ActivityView.swift in Sources */,
 				795E112E2BF26703005D3D24 /* ProfileView.swift in Sources */,
 				795E11482BF48177005D3D24 /* FileResponseView.swift in Sources */,
 				795E11292BF1EA60005D3D24 /* ClassroomViewModel.swift in Sources */,
@@ -478,6 +503,7 @@
 				795E11362BF2E58F005D3D24 /* ProfileViewModel.swift in Sources */,
 				795E11302BF26955005D3D24 /* DummyView.swift in Sources */,
 				795E112C2BF26488005D3D24 /* AppHeading.swift in Sources */,
+				79CEB1EF2BF627A800280A21 /* Activity.swift in Sources */,
 				795E110F2BF04FF6005D3D24 /* SupabaseClient.swift in Sources */,
 				795E11232BF0E32A005D3D24 /* JoinClassroomViewModel.swift in Sources */,
 			);

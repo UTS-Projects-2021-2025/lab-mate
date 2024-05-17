@@ -13,6 +13,11 @@ class ClassroomViewModel {
     let classroom: Classroom
     
     var channel: RealtimeChannelV2?
+    var activities: [Activity] = []
+    
+    var isLoading = false
+    
+    var hasCurrentActivity = false
     
     init(classroom: Classroom) {
         self.classroom = classroom
@@ -22,11 +27,53 @@ class ClassroomViewModel {
         Task {
             await joinClass()
         }
+        Task {
+            await fetchActivities()
+        }
     }
     
     func destroy() {
         Task {
             await leaveClass()
+        }
+    }
+    
+    func getCurrentActivity() -> Activity? {
+        let now = Date()
+        let currentActivities = activities.filter { $0.startTime < now && $0.endTime > now }
+        return currentActivities.first
+    }
+    
+    func fetchActivities() async {
+        do {
+            isLoading = true
+            defer { isLoading = false }
+            
+            let dateInterval = Calendar.current.date(byAdding: .hour, value: -1, to: Date())!
+            
+            activities = try await supabase
+                .from("activities")
+                .select("id,created_at,name,description,start_time,end_time")
+                .eq("classroom_id", value: classroom.id)
+                .gt("created_at", value: dateInterval.ISO8601Format())
+                .order("start_time")
+                .execute()
+                .value
+            
+            activities.forEach { activity in
+                let now = Date()
+                if activity.startTime < now && activity.endTime > now {
+                    hasCurrentActivity = true
+                    return
+                }
+            }
+            
+            print("Time Now \(Date())")
+            
+            print("Activities:")
+            print(activities)
+        } catch {
+            debugPrint(error)
         }
     }
     
@@ -44,6 +91,8 @@ class ClassroomViewModel {
     
     func joinClass() async {
         channel = await supabase.channel(classroom.code)
+       
+        let insertions = await channel?.postgresChange(InsertAction.self, schema: "public", table: "activities")
         await channel?.subscribe()
         
         print("Joining Channel")
@@ -56,6 +105,12 @@ class ClassroomViewModel {
             )
             
             try await channel?.track(presence)
+            
+            if let inserts = insertions {
+                for await _ in inserts {
+                    await fetchActivities()
+                }
+            }
         } catch {
             debugPrint(error)
         }
